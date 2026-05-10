@@ -8,3 +8,9 @@ Deze HTML-tool is bereikbaar via: https://edwintl4e.github.io/Think_Like/
 <a href="https://edwintl4e.github.io/Think_Like/" target="_blank" rel="noopener noreferrer">
   Open Think Like Tool
 </a>
+
+## Demo
+
+<a href="https://edwintl4e.github.io/Think_Like/" target="_blank" rel="noopener noreferrer">
+🚀 Start de Think Like Tool
+</a>
