@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Think Like</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Think Like</title>
+<style>
     :root {
       --bg: #0f172a;
       --panel: #111827;
@@ -265,49 +266,58 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <header>
-        
-        <h1>Think Like</h1>
-        <p class="tagline">Better AI conversations start with the right perspective.</p>
-        <p class="subtitle">
+<div class="container">
+<div class="card">
+<header>
+<h1>Think Like</h1>
+<p class="tagline">Better AI conversations start with the right perspective.</p>
+<p class="subtitle">
           Think Like helpt je om AI te laten denken vanuit verschillende experts, rollen, denkers en bekende personen.
         </p>
-      </header>
-
-      <main>
-        <section aria-labelledby="toelichting-title">
-          <h2 id="toelichting-title">📌 Toelichting</h2>
-          <p>
-            In plaats van algemene antwoorden krijg je reacties vanuit een specifiek perspectief of denkkader. Dat zorgt voor scherpere inzichten, meer focus en creatievere ideeën in dagelijks gebruik.
-          </p>
-          <p>
-            Gebruik Think Like voor strategie, coaching, analyse, leren, besluitvorming, onderzoek en professionele advisering.
-          </p>
-          <p>
-            Voorbeelden:
-            <br>• Think Like Jung
-            <br>• Think Like a CEO
-            <br>• Think Like Elon Musk
-            <br>• Think Like a Negotiator
-            <br>• Think Like a Therapist
-          </p>
-          <p>
-            <strong>Tip:</strong> Duidelijke en specifieke expertrollen geven meestal de beste AI-antwoorden.
-          </p>
-        <p>
-            Na het kopiëren van de prompt kun je deze direct plakken en uitvoeren in een LLM-model zoals <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Google Gemini</a>, <a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">Microsoft Copilot</a> en vergelijkbare AI-platformen.
-          </p>
-        </section>
-
-        <section aria-labelledby="prompt-title">
-          <div class="prompt-header">
-            <h2 id="prompt-title">🧠 Prompt</h2>
-            <button id="copyButton" type="button" onclick="copyPrompt()">Kopieer prompt</button>
-          </div>
-
-          <pre id="promptText">Stap 1: Vraag: "Welke expertise heb je nodig? Benoem een domein, vakgebied, expertrol of persoon." Geef daarbij 6 voorbeelden als gewone tekst, zonder interactieve elementen.
+</header>
+<main>
+<section aria-labelledby="toelichting-title">
+<h2 id="toelichting-title">📌 Toelichting</h2>
+<p>
+Think Like helpt je om vanuit verschillende experts, denkkaders en professionele rollen naar vraagstukken te kijken.
+</p>
+<p>
+In plaats van algemene antwoorden krijg je reacties vanuit een specifieke expertise of manier van denken. Dat leidt vaak tot scherpere analyses, creatievere ideeën, betere vragen, praktischere adviezen en minder generieke AI-antwoorden.
+</p>
+<p>
+Gebruik Think Like voor strategie, coaching, besluitvorming, onderzoek, reflectie, leren en professionele advisering.
+</p>
+<p>
+Voorbeelden:
+<br/>• Think Like Jung
+<br/>• Think Like a CEO
+<br/>• Think Like Elon Musk
+<br/>• Think Like a Negotiator
+<br/>• Think Like a Therapist
+</p>
+<h2 style="margin-top:24px;">💡 Waarom werkt dit beter?</h2>
+<p>
+Een eenvoudige prompt zoals “Neem de rol aan van Elon Musk” geeft vaak algemene of inconsistente antwoorden. Tijdens het gesprek kan de AI bovendien van perspectief wisselen of aannames doen die niet goed passen bij de gekozen expertise. Think Like stuurt daarom niet alleen op een rol, maar ook op consistente expertise, duidelijke denkkaders en transparantie over onzekerheid. Daardoor blijft de AI beter binnen hetzelfde perspectief denken en ontstaan vaak scherpere, betrouwbaardere en praktisch beter toepasbare antwoorden.
+</p>
+<h2 style="margin-top:24px;">✅ Tip</h2>
+<p>
+Hoe specifieker de expertrol, hoe sterker en consistenter de antwoorden meestal worden.
+</p>
+<p>
+Na het kopiëren van de prompt kun je deze direct gebruiken in AI-platformen zoals
+<a href="https://chatgpt.com" rel="noopener noreferrer" target="_blank">ChatGPT</a>,
+<a href="https://claude.ai" rel="noopener noreferrer" target="_blank">Claude</a>,
+<a href="https://gemini.google.com" rel="noopener noreferrer" target="_blank">Google Gemini</a>,
+<a href="https://copilot.microsoft.com" rel="noopener noreferrer" target="_blank">Microsoft Copilot</a>
+en vergelijkbare systemen.
+</p>
+</section>
+<section aria-labelledby="prompt-title">
+<div class="prompt-header">
+<h2 id="prompt-title">🧠 Prompt</h2>
+<button id="copyButton" onclick="copyPrompt()" type="button">Kopieer prompt</button>
+</div>
+<pre id="promptText">Stap 1: Vraag: "Welke expertise heb je nodig? Benoem een domein, vakgebied, expertrol of persoon." Geef daarbij 6 voorbeelden als gewone tekst, zonder interactieve elementen.
 Geef geen aanvullende uitleg en stel verder geen vragen.
 
 Stap 2: Neem de meest passende expertrol aan op basis van de invoer.
@@ -326,73 +336,67 @@ Blijf vervolgens consequent binnen de gekozen expertise:
 - Valt een vraag buiten de gekozen expertise, zeg dan letterlijk: "Dit valt buiten mijn rol als [rol]. Stel gerust een vraag binnen [domein]."
 
 Stap 3: Introduceer jezelf kort in de gekozen rol en vermeld de expertise tussen haakjes. Sluit af met een korte uitnodiging om een vraag te stellen.</pre>
-        </section>
-
-        <section aria-labelledby="followup-title">
-          <h2 id="followup-title">🚀 Vervolgprompts</h2>
-          <p>
+</section>
+<section aria-labelledby="followup-title">
+<h2 id="followup-title">🚀 Vervolgprompts</h2>
+<p>
             Gebruik deze aanvullende prompts om van expertise te wisselen, de AI te laten reflecteren of antwoorden verder aan te scherpen.
           </p>
-
-          <div class="followup-grid">
-            <div class="followup-group">
-              <h3>🔄 Rolbeheer</h3>
-              <div class="mini-prompt">
-                <span>Welke expertrol gebruik je momenteel?</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-              <div class="mini-prompt">
-                <span>Verander naar de rol van [expert].</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-              <div class="mini-prompt">
-                <span>Blijf strikt binnen je huidige expertise.</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-            </div>
-
-            <div class="followup-group">
-              <h3>🧠 Reflectie</h3>
-              <div class="mini-prompt">
-                <span>Wat valt buiten jouw expertise?</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-              <div class="mini-prompt">
-                <span>Welke risico’s zie je vanuit jouw vakgebied?</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-              <div class="mini-prompt">
-                <span>Welke alternatieve visie bestaat hierop?</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-            </div>
-
-            <div class="followup-group">
-              <h3>⚙️ Stijl</h3>
-              <div class="mini-prompt">
-                <span>Geef een kort en praktisch antwoord.</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-              <div class="mini-prompt">
-                <span>Maak dit geschikt voor een MT.</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-              <div class="mini-prompt">
-                <span>Gebruik eenvoudige taal.</span>
-                <button type="button" onclick="copyMiniPrompt(this)">Kopieer</button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer>
+<div class="followup-grid">
+<div class="followup-group">
+<h3>🔄 Rolbeheer</h3>
+<div class="mini-prompt">
+<span>Welke expertrol gebruik je momenteel?</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+<div class="mini-prompt">
+<span>Verander naar de rol van [expert].</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+<div class="mini-prompt">
+<span>Blijf strikt binnen je huidige expertise.</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+</div>
+<div class="followup-group">
+<h3>🧠 Reflectie</h3>
+<div class="mini-prompt">
+<span>Wat valt buiten jouw expertise?</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+<div class="mini-prompt">
+<span>Welke risico’s zie je vanuit jouw vakgebied?</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+<div class="mini-prompt">
+<span>Welke alternatieve visie bestaat hierop?</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+</div>
+<div class="followup-group">
+<h3>⚙️ Stijl</h3>
+<div class="mini-prompt">
+<span>Geef een kort en praktisch antwoord.</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+<div class="mini-prompt">
+<span>Maak dit geschikt voor een MT.</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+<div class="mini-prompt">
+<span>Gebruik eenvoudige taal.</span>
+<button onclick="copyMiniPrompt(this)" type="button">Kopieer</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
         v1.0 · mei 2026 · TL4E
       </footer>
-    </div>
-  </div>
-
-  <script>
+</div>
+</div>
+<script>
     async function copyPrompt() {
       const promptText = document.getElementById('promptText').innerText;
       const button = document.getElementById('copyButton');
