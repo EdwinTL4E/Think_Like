@@ -5,3 +5,6 @@ De tool is ontwikkeld voor strategie, coaching, onderzoek, leren en professionel
 Open simpelweg Think Like in een browser, kopieer de prompt, kies een expertrol en start het gesprek. Think Like werkt volledig lokaal en bevat extra vervolgprompts voor reflectie, rolbeheer en het verfijnen van AI-antwoorden.
 
 Deze HTML-tool is bereikbaar via: https://edwintl4e.github.io/Think_Like/
+<a href="https://edwintl4e.github.io/Think_Like/" target="_blank" rel="noopener noreferrer">
+  Open Think Like Tool
+</a>
